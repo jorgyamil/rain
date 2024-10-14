@@ -23,9 +23,13 @@
     </style>
     <canvas></canvas>
 
-    <audio src="./audio2.mp3" autoplay controls hidden></audio>
+<audio id="miAudio" src="./audio2.mp3" autoplay hidden></audio>
 
     <script>
+      document.body.addEventListener('click', function() {
+  document.getElementById('miAudio').play();
+});
+
       var canvas = document.querySelector("canvas"),
         ctx = canvas.getContext("2d");
 
